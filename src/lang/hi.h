@@ -5,12 +5,12 @@
 
 const char *STR_EN[] = { ""
 // help
-    , "Loading..."
-    , "Press H for help"
+    , "लोड हो रहा है..."
+    , "मदद के लिए H दबाये"
     , helpText
     , "%s@@@"
-      "KILLS %d@@"
-      "PICKUPS %d@@"
+      "हत्या %d@@"
+      "उठाया हुआ %d@@"
       "SECRETS %d of %d@@"
       "TIME TAKEN %s"
     , "Saving game..."
