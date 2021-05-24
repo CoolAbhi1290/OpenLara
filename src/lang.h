@@ -257,7 +257,7 @@ enum StringID {
 #ifdef _XBOX // TODO: illegal escape sequence
     #define STR_RUSSIAN "Russian"
 #else
-    #define STR_RUSSIAN "–ÛÒÒÍË{Ë"
+    #define STR_RUSSIAN "√ê√≥√±√±√™√®{√®"
 #endif
 
 #define STR_LANGUAGES \
@@ -315,6 +315,7 @@ const char *helpText =
 #include "lang/fr.h"
 #include "lang/de.h"
 #include "lang/es.h"
+#include "lang/hi.h"
 #include "lang/it.h"
 #include "lang/pl.h"
 #include "lang/pt.h"
@@ -334,6 +335,7 @@ void ensureLanguage(int lang) {
     ASSERT(COUNT(STR_FR) == STR_MAX);
     ASSERT(COUNT(STR_DE) == STR_MAX);
     ASSERT(COUNT(STR_ES) == STR_MAX);
+    ASSERT(COUNT(STR_HI) == STR_MAX);
     ASSERT(COUNT(STR_IT) == STR_MAX);
     ASSERT(COUNT(STR_PL) == STR_MAX);
     ASSERT(COUNT(STR_PT) == STR_MAX);
@@ -352,6 +354,7 @@ void ensureLanguage(int lang) {
         case STR_LANG_FR : STR = (char**)STR_FR; break;
         case STR_LANG_DE : STR = (char**)STR_DE; break;
         case STR_LANG_ES : STR = (char**)STR_ES; break;
+        case STR_LANG_HI : STR = (char**)STR_HI; break;
         case STR_LANG_IT : STR = (char**)STR_IT; break;
         case STR_LANG_PL : STR = (char**)STR_PL; break;
         case STR_LANG_PT : STR = (char**)STR_PT; break;
